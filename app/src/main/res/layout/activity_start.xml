@@ -1,0 +1,53 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation = "vertical"
+    android:weightSum="1" >
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/start_spinner"
+        android:spinnerMode="dropdown"
+        android:focusable="false"
+        android:touchscreenBlocksFocus="false"
+        android:background="#ffc1c1c1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Eingabe des Betrags: "
+            android:layout_marginLeft="10dp"
+            android:id="@+id/start_textView" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_horizontal"
+            android:inputType="numberDecimal"
+            android:id="@+id/start_editText" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Start"
+        android:layout_gravity="center"
+        android:id="@+id/start_button" />
+
+</LinearLayout>
